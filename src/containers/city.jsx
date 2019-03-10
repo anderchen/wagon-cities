@@ -6,6 +6,6 @@ const City = (props) => {
       {props.city.name}
     </div>
   );
-}
+};
 
 export default City;

@@ -6,7 +6,7 @@ import ActiveCity from './active_city';
 const App = () => {
   return (
     <div className="app">
-      <CityList cities={cities} />
+      <CityList />
       <ActiveCity />
     </div>
   );
