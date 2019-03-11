@@ -8,13 +8,12 @@ import City from './city';
 
 
 class CityList extends Component {
-
   componentWillMount() {
     this.props.setCities();
   }
 
   renderList() {
-    return this.props.cities.map((city, key) => {
+    return this.props.cities.map((city) => {
       return (
         <City city={city} key={city.address} />
       );
@@ -22,7 +21,7 @@ class CityList extends Component {
   }
 
   render() {
-    return(
+    return (
       <div className="cities">
         {this.renderList()}
       </div>
