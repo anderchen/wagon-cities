@@ -1,5 +1,4 @@
 import cities from '../../data/cities';
-import city_list from '../containers/city_list';
 
 export function setCities() {
   return {
@@ -8,9 +7,9 @@ export function setCities() {
   };
 }
 
-export function activeCity() {
+export function setActiveCity(city) {
   return {
     type: 'ACTIVE_CITY',
-    payload: city_list
-  };
+    payload: city
+  }
 }

@@ -10,3 +10,5 @@ const activeCityReducer = (state, action) => {
       return state;
   }
 }
+
+export default activeCityReducer;
